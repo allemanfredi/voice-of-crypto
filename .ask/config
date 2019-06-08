@@ -10,7 +10,7 @@
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "326c7a91455a2646224d59bd3bcfc680"
+            "eTag": "a7c4902d89e58e3d3196cb67f53cea99"
           }
         },
         "lambda": [
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-crypto-voice",
             "handler": "index.handler",
-            "revisionId": "1a99aabc-41ad-4316-9c46-d7ad488f35a6",
+            "revisionId": "feb68b0a-34e0-497f-9485-7b38b1917cc7",
             "runtime": "nodejs8.10"
           }
         ]

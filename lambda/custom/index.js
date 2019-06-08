@@ -3,7 +3,7 @@
 
 const Alexa = require('ask-sdk-core');
 const { phrases } = require('./phrases');
-const { AskingByNameIntentHandler } = require('./handlers');
+const { AskingByNameIntentHandler , AskingByLimitFromFirstIntentHandler } = require('./handlers');
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
@@ -84,6 +84,7 @@ exports.handler = skillBuilder
     LaunchRequestHandler,
     HelpIntentHandler,
     AskingByNameIntentHandler,
+    AskingByLimitFromFirstIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
   )

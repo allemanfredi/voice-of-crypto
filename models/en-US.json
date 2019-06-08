@@ -1,39 +1,52 @@
 {
-  "interactionModel": {
-      "languageModel": {
-          "invocationName": "voice of crypto",
-          "intents": [
-              {
-                  "name": "AMAZON.CancelIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.HelpIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.StopIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.NavigateHomeIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AskingByNameIntent",
-                  "slots": [
-                      {
-                          "name": "CryptoSlot",
-                          "type": "AMAZON.SearchQuery"
-                      }
-                  ],
-                  "samples": [
-                      "how much is it worth {CryptoSlot} ",
-                      "price of {CryptoSlot}"
-                  ]
-              }
-          ],
-          "types": []
-      }
-  }
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "voice of cryptos",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AskingByNameIntent",
+                    "slots": [
+                        {
+                            "name": "CryptoSlot",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "how much is it worth {CryptoSlot} ",
+                        "price of {CryptoSlot}"
+                    ]
+                },
+                {
+                    "name": "AskingByLimitFromFirstIntent",
+                    "slots": [
+                        {
+                            "name": "LimitSlot",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the first {LimitSlot}",
+                        "price of the first {LimitSlot}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
 }

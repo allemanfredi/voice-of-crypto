@@ -34,3 +34,30 @@ module.exports.AskingByNameIntentHandler = {
                 .getResponse();
     }
 }
+
+module.exports.AskingByLimitFromFirstIntentHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+          && handlerInput.requestEnvelope.request.intent.name === 'AskingByLimitFromFirstIntent';
+    },
+    async handle(handlerInput) {
+        let speechText = '';
+
+        const limit = handlerInput.requestEnvelope.request.intent.slots.LimitSlot.value;
+        
+        try{
+            const cryptos =  await client.getTickers({start: 1, limit});
+            cryptos.data.forEach( crypto => {
+                speechText += "the " + crypto.name + 's price is ' + crypto.quote.USD.price + ' dollars .\n'
+            })
+        }catch(err){
+            speechText = 'Limit not valid';
+        }
+
+        return handlerInput.responseBuilder
+                .speak(speechText)
+                .reprompt('')
+                .withSimpleCard(phrases["en-US"].card, speechText)
+                .getResponse();
+    }
+}
