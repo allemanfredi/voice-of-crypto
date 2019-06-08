@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "cryptocurrencies prices",
+          "examplePhrases": [
+            "Alexa open voice of crypto",
+            "voice of crypto",
+            "help"
+          ],
+          "name": "voice of crypto",
+          "description": "cryptocurrencies prices"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-crypto-voice"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

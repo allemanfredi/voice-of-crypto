@@ -1,0 +1,33 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.b943c184-5685-4a50-9363-f2c8cce8abba",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "93648820c0ff007ad0413cc1b41d40ae"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "326c7a91455a2646224d59bd3bcfc680"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:772567014871:function:ask-crypto-voice",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-crypto-voice",
+            "handler": "index.handler",
+            "revisionId": "1a99aabc-41ad-4316-9c46-d7ad488f35a6",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}
