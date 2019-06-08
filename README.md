@@ -1,6 +1,6 @@
 # VOICE OF CRYPTO
 
-voice of crypto is an application for Alexa that allows you to get information about the prices of cryptocurrencies directly from Coinmarketcap
+voice of crypto is a Skill for Alexa that allows you to get information about the prices of cryptocurrencies directly from Coinmarketcap
 
 ### Installation
 1. **Make sure** you are running the latest version of the CLI
