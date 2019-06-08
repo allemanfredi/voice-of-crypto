@@ -1,4 +1,4 @@
-#VOICE OF CRYPTO
+# VOICE OF CRYPTO
 
 voice of crypto is an application for Alexa that allows you to get information about the prices of cryptocurrencies directly from Coinmarketcap
 
